@@ -37,24 +37,25 @@
             <header>
                 <nav>
                     <div class="again-flex">
-                        <div class="a1"><a class="active" href="index.php">who we are</a></div>
-                        <div class="a2"><a href="pricing.php">pricing</a></div>
-                        <div class="a3"><a href="destination.php">destinations</a></div>
-                        <div class="a4"><a href="contact.php" class="active">contact</a></div>
+                        <div class="a1"><a class="active" href="index.html">who we are</a></div>
+                        <div class="a2"><a href="pricing.html">pricing</a></div>
+                        <div class="a3"><a href="destination.html">destinations</a></div>
+                        <div class="a4"><a href="contact.html" class="active">contact</a></div>
                     </div>
                 </nav>
             </header>
             <hr id="hr1">
             <main>
                 <h1 id="h1-heading">Contact Us</h1>
-                <div class="form">
-                    <form action="">
-                        <input type="text" placeholder="Enter your fullname" class="input_fields">
+                <div class="form" >
+                    <form action="server.php" method="post">
+                        <input type="text" name="fullName" placeholder="Enter your fullname" class="input_fields">
                         <br>
-                        <input type="email" name="" id="" placeholder="Enter your email" class="input_fields">
+                        <input type="email" name="email" id="" placeholder="Enter your email" class="input_fields">
                         <br>
-                        <input type="text" placeholder="Write your message" class="input_fields">
-                        <button class="button">Submit</button>
+                        <textarea name="message" id="" placeholder="Write your message" class="input_fields"></textarea>
+                        <input type="hidden" name="cmd" value="submit">
+                        <button class="button" name="submit">Submit</button>
                     </form>
                 </div>
             </main>
