@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Playfair+Display:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+/* Main style */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #f2efee;
+  font-family: "Inter", sans-serif;
+  color: #3f3f4e;
+}
+
+#h1-heading {
+  font-family: "Libre Baskerville", serif;
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+}
+
+.center-img {
+  object-fit: cover;
+}
+
+.main-flex {
+  display: flex;
+}
+
+.left {
+  width: 15vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80px;
+  margin-top: 20px;
+}
+
+.img-logo {
+  transform: rotate(-90deg);
+  width: 10px;
+  background-image: url();
+}
+
+#h1-logo {
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-size: x-large;
+  margin-bottom: 30px;
+  font-family: "Libre Baskerville", serif;
+  font-family: "Playfair Display", serif;
+  color: #b90e0a;
+  font-weight: bolder;
+  word-spacing: 4px;
+  letter-spacing: 0.5px;
+}
+
+img {
+  width: 55vw;
+  height: 100vh;
+}
+
+.right {
+  margin: 10px 40px;
+}
+
+header {
+  height: 50px;
+}
+
+h1,
+.name {
+  text-transform: capitalize;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 22px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+nav {
+  padding-top: 13px;
+}
+
+.active {
+  color: #b90e0a !important;
+}
+a:hover {
+  color: #b90e0a;
+  transition: all 0.5s;
+  /* font-weight: bolder; */
+}
+
+nav {
+  padding-top: 13px;
+}
+
+main {
+  margin: 35px 0;
+}
+
+.content-p {
+  line-height: 25px;
+  margin: 25px 0;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 10px;
+}
+footer p {
+  font-size: 14px;
+}
+
+.name {
+  color: black;
+  font-weight: 500;
+}
+
+.again-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 22px;
+}
+
+.a1 {
+  white-space: nowrap;
+}
+
+/* pricing */
+
+.carosoul_style {
+  width: 450px !important;
+  height: 370px !important;
+}
+.tour-card {
+  width: 450px !important;
+  height: 370px !important;
+  border: 1px solid #3f3f4e;
+}
+.card-img {
+  width: 450px !important;
+  height: 300px !important;
+}
+.tour-card h4 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #3f3f4e;
+  margin-top: 15px;
+  text-decoration: none;
+}
+.tour-card h4:hover {
+  color: #b90e0a;
+  transition: all 0.5s;
+}
+.tour-card h6 {
+  color: #b90e0a;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.carosoul_style_des {
+  width: 450px !important;
+  height: 400px !important;
+}
+
+.tour-des {
+  width: 450px !important;
+  height: 400px !important;
+  border: 1px solid #3f3f4e;
+}
+.tour-des h4 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #3f3f4e;
+  margin-top: 15px;
+  text-decoration: none;
+}
+.tour-des h4:hover {
+  color: #b90e0a;
+  transition: all 0.5s;
+}
+.tour-des h6 {
+  color: #b90e0a;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+/* Contact Form */
+
+.input_fields {
+  width: 450px;
+  height: 40px;
+  margin-top: 20px;
+  border-color: #b90e0a;
+  /* border-radius: 10%; */
+}
+.input_fields:hover {
+  color: #f2efee;
+  border-color: aliceblue;
+  background-color: #3f3f4e;
+  transition: all 0.5s;
+}
+.button {
+  width: 200px;
+  height: 40px;
+  margin-top: 20px;
+  border-color: #b90e0a;
+}
+.button:hover {
+  color: #f2efee;
+  border-color: aliceblue;
+  background-color: #3f3f4e;
+  transition: all 0.5s;
+}
+
+/* tablet */
+
+@media screen and (max-width: 800px) {
+  .main-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #h1-logo {
+    text-transform: uppercase;
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+    font-size: x-large;
+    margin: 0px;
+    font-family: "Libre Baskerville", serif;
+    font-family: "Playfair Display", serif;
+    color: #b90e0a;
+    font-weight: bolder;
+    word-spacing: 4px;
+    letter-spacing: 0.5px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 70px;
+    width: 70px;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+  }
+
+  body {
+    margin: 0 35px;
+  }
+
+  .right {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .center-img {
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+    text-align: center;
+    border-top: 0.5px solid gray;
+  }
+
+  #img1 {
+    height: 200px;
+    width: 100%;
+    margin-top: 25px;
+    object-fit: cover;
+  }
+
+  .again-flex {
+    width: 250px;
+  }
+  .carosoul_style {
+    /* margin-top: 70px; */
+    width: 450px !important;
+    height: 370px !important;
+  }
+  .tour-card {
+    width: 450px !important;
+    height: 370px !important;
+    border: 1px solid #3f3f4e;
+  }
+  .card-img {
+    width: 450px !important;
+    height: 300px !important;
+  }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 370px) {
+  body {
+    margin: 0 35px;
+    /* max-width: 100vw; */
+  }
+
+  #hr1 {
+    visibility: hidden;
+  }
+
+  #h1-heading {
+    margin-top: 85px;
+    border-top: 0.5px solid gray;
+    padding-top: 25px;
+  }
+
+  .main-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+    height: 70px;
+  }
+
+  .links {
+    visibility: hidden;
+  }
+
+  #h1-logo {
+    text-transform: uppercase;
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+    font-size: x-large;
+    margin: 0px;
+    font-family: "Libre Baskerville", serif;
+    font-family: "Playfair Display", serif;
+    color: #b90e0a;
+    font-weight: bolder;
+    word-spacing: 4px;
+    letter-spacing: 0.5px;
+  }
+
+  .center-img {
+    width: 100%;
+    object-fit: cover;
+
+    align-items: center;
+    text-align: center;
+  }
+
+  #img1 {
+    height: 300px;
+    width: 300px;
+    margin-top: 25px;
+    object-fit: cover;
+  }
+
+  .again-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 22px;
+    height: 100px;
+  }
+
+  header {
+    border-bottom: 2px solid;
+  }
+
+  .right {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .a1,
+  .a2,
+  .a3,
+  .a4 {
+    display: block;
+  }
+  .input_fields {
+    width: 300px;
+  }
+
+  .carosoul_style {
+    margin-top: 70px;
+    width: 300px !important;
+    height: 370px !important;
+  }
+  .tour-card {
+    width: 300px !important;
+    height: 370px !important;
+    border: 1px solid #3f3f4e;
+  }
+  .card-img {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  /* destination style */
+  .carosoul_style_des {
+    margin-top: 70px;
+    width: 300px !important;
+    height: 400px !important;
+  }
+
+  .tour-des {
+    width: 300px !important;
+    height: 400px !important;
+    border: 1px solid #3f3f4e;
+  }
+}
+
